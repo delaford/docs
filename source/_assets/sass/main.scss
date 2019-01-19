@@ -1,0 +1,61 @@
+@tailwind preflight;
+html {
+  font-size: 14px;
+
+  @media (min-width: 420px) {
+    font-size: 16px;
+  }
+}
+
+@tailwind components;
+
+// Code syntax highlighting,
+// powered by https://highlightjs.org
+@import '~highlight.js/styles/a11y-light.css';
+
+@import 'base';
+@import 'navigation';
+@import 'documentation';
+@import 'search';
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol:not(.default),
+ul:not(.default) {
+  @apply .list-reset;
+}
+
+.human-logo {
+  width:32px;
+  height: 32px;
+}
+
+@font-face { 
+    font-family: 'cloisterblack';
+    src: url('cloisterblack-webfont.woff2') format('woff2'),
+         url('cloisterblack-webfont.woff') format('woff');
+    font-style: normal;
+}
+
+.page-title {
+	font-family: 'cloisterblack', cursive;
+	@apply text-grey-darkest;
+}
+
+.documentation-page {
+	@apply font-serif;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'cloisterblack', cursive;
+  }
+}
+
+@tailwind utilities;
