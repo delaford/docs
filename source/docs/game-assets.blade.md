@@ -84,3 +84,11 @@ Items in the game are kept here in both their original `.xcf` format and exporte
 ])
 
 You can easily edit `.xcf` files using GIMP to add/modify/remove assets. Remember to update the `x`,`y` coordinates in their respective JavaScript files in `server/core/data` in `/foreground` and `/items` so that the respective image is shown in the tileset.
+
+## SCSS
+
+Sass style sheets for the game and UI. The main file `main.scss` groups everything from buttons to typography styles.
+
+## Tiles
+
+Where the main tilesets in-game reside. There is the foreground `objects.xcf` and background `terrain.xcf`. These can be edited using GIMP as you replace, add, modify tiles in-game.

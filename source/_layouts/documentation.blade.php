@@ -11,7 +11,7 @@
             @include('_nav.menu', ['items' => $page->navigation])
         </nav>
 
-          <div class="pt-8 pb-0 w-full mt-7">
+          <div id="app" v-cloak class="pt-8 pb-0 w-full mt-7">
             <div class="markdown mb-1 px-6 max-w-lg mx-auto pl-0 ml-0 lg:mr-auto xl:mx-0 xl:px-12 xl:w-3/4">
               <h1 class="page-title sm:text-lg md:text-5xl mb-0">{{ $page->title }}</h1>
               @if ($page->description)
@@ -20,11 +20,18 @@
                 </div>
               @endif
             </div>
+
+            {{-- Test Component --}}
+            <test></test>
+            {{-- End Test Component --}}
+
+
             <div class="flex">
               <div class="markdown xl:px-12 w-full max-w-lg mx-auto lg:ml-0 lg:mr-auto xl:mx-0 xl:w-3/4 documentation-page">
                 @yield('content')
               </div>
             </div>
+            <script src="/js/app.js"></script>
           </div>
     </div>
 </section>

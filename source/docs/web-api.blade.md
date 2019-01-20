@@ -23,7 +23,7 @@ It currently has these following methods:
 		],
 		[
 			'/refresh',
-			"General use items like coins, smithing bars, and arrows."
+			"Refresh a player's JWT token."
 		],
 		[
 			'/me',
