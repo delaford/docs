@@ -54,6 +54,7 @@ ul:not(.default) {
   h4,
   h5,
   h6 {
+    @apply mb-0;
     font-family: 'cloisterblack', cursive;
   }
 }

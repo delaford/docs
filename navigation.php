@@ -9,9 +9,8 @@ return [
         'Database' => 'database',
     ],
     'Architecture' => [
-        'Socket Handler' => 'socket-handler',
-        'Game Assets' => 'game-assets',
         'Event Handler' => 'event-handler',
+        'Game Assets' => 'game-assets',
         'Web API' => 'web-api'
     ],
     'Core' => [
