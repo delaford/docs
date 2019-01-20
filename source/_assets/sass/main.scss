@@ -57,6 +57,10 @@ ul:not(.default) {
     @apply mb-0;
     font-family: 'cloisterblack', cursive;
   }
+
+  p {
+    @apply mt-3
+  }
 }
 
 @tailwind utilities;

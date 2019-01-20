@@ -934,6 +934,10 @@ ul:not(.default) {
   font-family: "cloisterblack", cursive;
 }
 
+.documentation-page p {
+  margin-top: .75rem;
+}
+
 .list-reset {
   list-style: none;
   padding: 0;
