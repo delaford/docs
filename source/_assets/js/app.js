@@ -1,7 +1,12 @@
+import TableOfContents from './components/TableOfContents.vue';
+
 window.Vue = require('vue');
 
-Vue.component('test', require('./components/test.vue'));
+Vue.component('table-of-contents', require('./components/TableOfContents.vue'));
 
 const app = new Vue({
-  el: '#app'
+	components: {
+	    TableOfContents,
+	},
+	el: '#app'
 });

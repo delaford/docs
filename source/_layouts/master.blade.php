@@ -41,7 +41,7 @@
     </head>
 
     <body class="font-sans font-normal text-black leading-normal">
-        <header class="flex bg-grey-lightest border-b border-grey-lighter fixed pin-t pin-x z-100 h-16 items-center" role="banner">
+        <header class="flex bg-grey-lightest border-b border-grey-lighter fixed pin-t pin-x z-50 h-16 items-center" role="banner">
 
             <div class="w-full max-w-screen-xl relative mx-auto px-6">
                 <div class="-mx-6 flex items-center">
@@ -49,28 +49,23 @@
                         <img style="max-width:32px;max-height:32px;min-width:32px;min-height:32px;" class="lg:w-12 lg:h-12 block" src="/assets/img/human.png" alt="{{ $page->siteName }} logo" />
                     </div>
 
-                    <div id="js-search-input" class="lg:w-1/2">
-                        <div class="relative">
+                    <div id="js-search-input" class="lg:w-1/2 sm:w-full">
+                        <div class="relative sm:w-full">
                             <input
-                            id="docsearch-input"
-                            class="docsearch-input relative block h-10 transition-fast sm:w-1/2 md:w-full bg-white outline-none rounded text-grey-darker border border-grey focus:border-blue-light focus:bg-blue-lightest px-4 pb-0"
-                            name="docsearch"
-                            type="text"
-                            placeholder="Search the docs...">
+                                id="docsearch-input"
+                                class="docsearch-input relative block h-10 transition-fast sm:w-1/2 md:w-full bg-white outline-none rounded text-grey-darker border border-grey focus:border-blue-light focus:bg-blue-lightest px-4 pb-0 sm:w-full"
+                                name="docsearch"
+                                type="text"
+                                placeholder="Search the docs...">
                         </div>
                     </div>
 
                     @yield('nav-toggle')
                 </div>
             </div>
-
-
-
         </header>
 
-        <main role="main" class="w-full flex-auto">
-            @yield('body')
-        </main>
+        @yield('body')
 
         <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
 

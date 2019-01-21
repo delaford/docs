@@ -1,4 +1,4 @@
-<div class="flex justify-center items-center w-full lg:hidden focus:outline-none"
+<div class="flex justify-center items-center lg:hidden focus:outline-none px-5"
     onclick="navMenu.toggle()"
 >
     <svg id="js-nav-menu-show" xmlns="http://www.w3.org/2000/svg"
