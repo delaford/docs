@@ -6,9 +6,9 @@ extends: _layouts.documentation
 
 Any time your player exits the server, whether from self logout, server reset, or inactivity, your player profile is saved through the Web API located on `delaford.com`.
 
-The Web API is in the [/website](https://github.com/delaford/website) part of the Repository and is the `AuthController`.
+The Web API is in the [/website](https://github.com/delaford/website) part of the Repository and part of the is the `AuthController`.
 
-It currently has these following methods:
+## Methods
 
 @include('_partials.class-table', [
 	'headers' => ['API', 'Description'],

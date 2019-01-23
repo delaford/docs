@@ -16,7 +16,6 @@ return [
     'Core' => [
         'Node Server' => 'node-server',
         'Context Menu' => 'context-menu',
-        'World' => 'world',
         'Game Panes' => 'game-panes',
         'Actions' => 'Actions',
     ],
