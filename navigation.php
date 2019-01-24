@@ -17,10 +17,10 @@ return [
         'Node Server' => 'node-server',
         'Context Menu' => 'context-menu',
         'Game Panes' => 'game-panes',
-        'Actions' => 'Actions',
+        'Actions' => 'actions',
     ],
     'Player' => [
-        'Inventory' => 'Inventory',
+        'Inventory' => 'inventory',
         'Skills' => 'skills',
         'Wear' => 'wear',
     ],

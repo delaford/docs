@@ -70,7 +70,7 @@ Some actions, like `examine`, can have multiple contexts such as: `['gameMap', '
 
 ### allow
 
-The `allow` value gives the context-menu the ability on where to [check](#check). Some actions will allow on multiple entities like `examine` which has the `allow` of `['npc', 'item']`. Some have an `allow` of `foreground` which only allows an action on (certain) foreground objects like `player:resource:mining:rock`.
+The `allow` value gives the context-menu the ability on where to [check](#build-and-check). Some actions will allow on multiple entities like `examine` which has the `allow` of `['npc', 'item']`. Some have an `allow` of `foreground` which only allows an action on (certain) foreground objects like `player:resource:mining:rock`.
 
 @include('_partials.class-table', [
 	'headers' => ['Allow', 'Description'],
@@ -137,10 +137,10 @@ When an action is queueable, it means that that action can be chain with others.
 
 Queueables are most used for actions whose `nearby` is `edge` or `take`. From there, the `walk-here` action is executed while the Queue system waits for the `walk-here` action to finish before starting the next item in the queue.
 
-## Build
+## Build and Check
 
 After we secure the mouse coordinates, where the user clicked on the map (23, 234) and where they clicked in the viewport (3, 5), we get to work building the context-menu. 
 
-## Check
+We start by going through the list of actions and filtering it by the `allow` of which they allow. 
 
-test
+The `check()` method then goes through the action's `context` to see which to cycle through. Then, the conditionals are checked and added to the list if they are met.
