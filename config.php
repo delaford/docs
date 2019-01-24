@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'baseUrl' => '',
+    'baseUrl' => 'https://docs.delaford.com',
     'production' => false,
     'siteName' => 'Delaford',
     'siteDescription' => 'Online 2D JavaScript RPG',
