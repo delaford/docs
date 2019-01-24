@@ -10,6 +10,9 @@
         <tr>
           <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">{!! $headers[0] !!}</th>
           <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">{!! $headers[1] !!}</th>
+          @if (isset($headers[2]))
+          <th class="text-sm font-semibold text-grey-darker p-2 bg-grey-lightest">{!! $headers[2] !!}</th>
+          @endif
         </tr>
       </thead>
       <tbody class="align-baseline">
@@ -17,6 +20,9 @@
         <tr>
           <td class="p-2 border-t {{ $loop->first ? 'border-grey-light' : 'border-grey-lighter' }} font-mono text-xs text-green-dark whitespace-no-wrap">{!! $row[0] !!}</td>
           <td class="p-2 border-t {{ $loop->first ? 'border-grey-light' : 'border-grey-lighter' }} font-mono text-xs text-blue-dark">{!! $row[1] !!}</td>
+          @if (isset($row[2]))
+          <td class="p-2 border-t {{ $loop->first ? 'border-grey-light' : 'border-grey-lighter' }} font-mono text-xs text-blue-dark">{!! $row[2] !!}</td>
+          @endif
         </tr>
         @endforeach
       </tbody>
