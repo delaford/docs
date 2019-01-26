@@ -7,8 +7,8 @@ return [
     'siteDescription' => 'Online 2D JavaScript RPG',
 
     // Algolia DocSearch credentials
-    'docsearchApiKey' => '',
-    'docsearchIndexName' => '',
+    'docsearchApiKey' => 'c6c9260646e329a26ea328c5789bc969',
+    'docsearchIndexName' => 'dev_NAME',
 
     // navigation menu
     'navigation' => require_once('navigation.php'),
