@@ -7,7 +7,7 @@ return [
     'siteDescription' => 'Online 2D JavaScript RPG',
 
     // Algolia DocSearch credentials
-    'docsearchApiKey' => 'c6c9260646e329a26ea328c5789bc969',
+    'docsearchApiKey' => 'f6513ef1da224f269e5fbb1d1b497b79',
     'docsearchIndexName' => 'delaford',
 
     // navigation menu
