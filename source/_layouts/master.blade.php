@@ -84,11 +84,6 @@
                 </a>
             </div>
         </footer>
-    </body>
-</html>
-
-@push('scripts')
-    @if ($page->docsearchApiKey && $page->docsearchIndexName)
         <script type="text/javascript">
             docsearch({
                 apiKey: '{{ $page->docsearchApiKey }}',
@@ -106,5 +101,5 @@
                 },
             }
         </script>
-    @endif
-@endpush
+    </body>
+</html>
