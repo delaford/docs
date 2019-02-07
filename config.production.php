@@ -5,6 +5,6 @@ return [
     'production' => true,
 
     // DocSearch credentials
-    'docsearchApiKey' => 'f6513ef1da224f269e5fbb1d1b497b79',
+    'docsearchApiKey' => '1551474b2e0ba4200e01741864fd572e',
     'docsearchIndexName' => 'delaford',
 ];
