@@ -8,7 +8,7 @@
             <ul class="list-reset mt-2">
               @foreach ($sectionItems as $name => $slugOrChildren)
                 @if (is_string($slugOrChildren))
-                  <li class="mb-3 lg:mb-2"><a class="hover:underline {{ $page->active('/' . $slugOrChildren) ? 'text-teal-dark font-semibold' : 'text-grey-darkest' }}" href="{{ $page->baseUrl }}/{{ $slugOrChildren }}">{{ $name }}</a></li>
+                  <li class="mb-3 lg:mb-2"><a class="hover:underline {{ $page->active('/' . $slugOrChildren) ? 'active text-teal-dark font-semibold' : 'text-grey-darkest' }}" href="{{ $page->baseUrl }}/{{ $slugOrChildren }}">{{ $name }}</a></li>
                 @else
                   <li class="mb-3 lg:mb-2">
                     <a href="{{ $page->baseUrl }}/{{ $slugOrChildren->first() }}" class="hover:underline block mb-3 lg:mb-2 {{ $page->anyChildrenActive($slugOrChildren) ? 'text-teal-dark font-semibold' : 'text-grey-darkest' }}">{{ $name }}</a>
